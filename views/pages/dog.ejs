@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+  <div class="container">
+    <img class="main-image" src="https://cdn.drawception.com/images/panels/2012/6-9/YZDhdCTAz4-6.png" alt="">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="margin-bottom: 2rem;">
+          <div class="card-body">
+            <h4 class="card-title"><%=dog.data.attributes.nickname%></h4>
+            <p class="card-text"><%=dog.data.attributes.description%></p>
+            <iframe id="dog-location-iframe" src="https://maps.google.com/maps?q=<%=dog.data.attributes.lat%>,<%=dog.data.attributes.lon%>&hl=es;z=14&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

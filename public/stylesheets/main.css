@@ -1,0 +1,18 @@
+.main-image{
+  display: block;
+  margin: auto;
+  padding: 50px;
+}
+
+#dog-location-iframe{
+  display: block;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: 0;
+}
+
+.title{
+  text-align: center;
+  color: red;
+  font-size: -webkit-xxx-large;
+}
